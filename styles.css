@@ -1,3 +1,13 @@
 /* span{
     display: none;
 } */
+div{
+    width: 400px;
+    margin: 20px auto;
+    background-color: rebeccapurple;
+    padding: 50px;
+   
+}
+ p{
+    display: none;
+}

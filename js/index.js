@@ -28,16 +28,38 @@ $(document).ready(function() {
 // )
 //  effect in jquary 
 
-$("button").click(function() {
-    //  $("p").hide(5000,function () {
-    //     $("span").css("color","red");
-    //  });
-     $("p").toggle(5000,function () {
-        $("span").css("color","red");
-        $("button").hide();
-     });
+// $("button").click(function() {
+//     //  $("p").hide(5000,function () {
+//     //     $("span").css("color","red");
+//     //  });
+//      $("p").toggle(5000,function () {
+//         $("span").css("color","red");
+//         $("button").hide();
+//      });
     // $("span").toggle();
 
+// })
+
+/// effect fade-in and fade-out 
+$("button").click(function () {
+    $("div").fadeIn(5000,function () {
+        $("p").hide();
+    }) 
+})
+$("button").click(function () {
+    $("div").fadeOut(5000,function () {
+        $("p").show();
+    }) 
+})
+$("button").click(function () {
+    $("div").fadeToggle(5000,function () {
+        $("p").fadeToggle(4000);
+    }) 
+})
+$("button").click(function () {
+    $("div").fadeTo(4000,0.5,function () {
+        $("p").show(); 
+    })
 })
 
 })
