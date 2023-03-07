@@ -36,7 +36,7 @@ $(document).ready(function() {
 //         $("span").css("color","red");
 //         $("button").hide();
 //      });
-    // $("span").toggle();
+//     $("span").toggle();
 
 // })
 
