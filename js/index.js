@@ -41,25 +41,38 @@ $(document).ready(function() {
 // })
 
 /// effect fade-in and fade-out 
-$("button").click(function () {
-    $("div").fadeIn(5000,function () {
-        $("p").hide();
-    }) 
+// $("button").click(function () {
+//     $("div").fadeIn(5000,function () {
+//         $("p").hide();
+//     }) 
+// })
+// $("button").click(function () {
+//     $("div").fadeOut(5000,function () {
+//         $("p").show();
+//     }) 
+// })
+// $("button").click(function () {
+//     $("div").fadeToggle(5000,function () {
+//         $("p").fadeToggle(4000);
+//     }) 
+// })
+// $("button").click(function () {
+//     $("div").fadeTo(4000,0.5,function () {
+//         $("p").show(); 
+//     })
+// })
+// slidedown and slideup 
+
+$(".first").click(function () {
+    $(".seconed").slideDown( 8000,function () {
+        $(".first").hide() ;
+    });
 })
-$("button").click(function () {
-    $("div").fadeOut(5000,function () {
-        $("p").show();
-    }) 
-})
-$("button").click(function () {
-    $("div").fadeToggle(5000,function () {
-        $("p").fadeToggle(4000);
-    }) 
-})
-$("button").click(function () {
-    $("div").fadeTo(4000,0.5,function () {
-        $("p").show(); 
-    })
+
+$(".first").click(function () {
+    $(".seconed").slideUp( 8000,function () {
+        $(".first").hide() ;
+    });
 })
 
 })
