@@ -63,16 +63,33 @@ $(document).ready(function() {
 // })
 // slidedown and slideup 
 
-$(".first").click(function () {
-    $(".seconed").slideDown( 8000,function () {
-        $(".first").hide() ;
-    });
-})
+// $(".first").click(function () {
+//     $(".seconed").slideDown( 8000,function () {
+//         $(".first").hide() ;
+//     });
+// })
 
-$(".first").click(function () {
-    $(".seconed").slideUp( 8000,function () {
-        $(".first").hide() ;
-    });
-})
+// $(".first").click(function () {
+//     $(".seconed").slideUp( 8000,function () {
+//         $(".first").hide() ;
+//     });
+// })
+$(".animate").animate({
+   width:'900px',
+   opacity:'0.2',
+   left:'30px',
+   top:'40px',
+  
+
+},8000)
+$(".animate-1").animate({
+    width:'900px',
+    opacity:'0.2',
+    left:'30px',
+    top:'40px',
+   
+ 
+ },8000)
+
 
 })
