@@ -75,22 +75,50 @@ $(document).ready(function() {
 //         $(".first").hide() ;
 //     });
 // })
-$(".animate").animate({
-   width:'900px',
-   opacity:'0.2',
-   left:'30px',
-   top:'40px',
+
+// animate 
+// $(".animate").animate({
+//    width:'900px',
+//    opacity:'0.2',
+//    left:'30px',
+//    top:'40px',
   
 
-},8000)
-$(".animate-1").animate({
-    width:'900px',
-    opacity:'0.2',
-    left:'30px',
-    top:'40px',
+// },8000)
+// $(".animate-1").animate({
+//     width:'900px',
+//     opacity:'0.2',
+//     left:'30px',
+//     top:'40px',
    
  
- },8000)
+//  },8000)
+
+// stop 
+// $("button").click(function() {
+//    $(".stop").stop(false,true);
+// })
+// $(".stop").animate({
+//    width:'800px',
+//    height:'600px'
+// },8000)
+// $(".stop").animate({
+//    width:'300px',
+//    height:'600px',
+//    opacity:'0.2',
+  
+// },8000)
+
+/// chain // 
+$(".chain").css({color:"red"})
+.slideUp(2000)
+.fadeIn(3000)
+.fadeOut(5000)
+.slideDown(2000)
+.hide(200)
+.show(3000)
+.animate({width:'600px'})
+
 
 
 })

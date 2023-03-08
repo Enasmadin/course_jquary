@@ -54,3 +54,21 @@
    
 
 }
+.stop{
+    width: 300px;
+    height: 200px;
+    background-color: aqua;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chain{
+    width: 300px;
+    height: 200px;
+    background-color: aqua;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
