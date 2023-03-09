@@ -110,14 +110,45 @@ $(document).ready(function() {
 // },8000)
 
 /// chain // 
-$(".chain").css({color:"red"})
-.slideUp(2000)
-.fadeIn(3000)
-.fadeOut(5000)
-.slideDown(2000)
-.hide(200)
-.show(3000)
-.animate({width:'600px'})
+// $(".chain").css({color:"red"})
+// .slideUp(2000)
+// .fadeIn(3000)
+// .fadeOut(5000)
+// .slideDown(2000)
+// .hide(200)
+// .show(3000)
+// .animate({width:'600px'})
+
+// text // 
+
+ var dis = $(".text").text();
+
+console.log(dis);
+
+$("p").text(dis);
+
+// html // 
+
+  var dis = $(".html").html();
+    console.log(dis);
+    $("p").html(dis);
+    $("p").text(dis); 
+
+    $("button").click(function () {
+        $("input").val($("div").text()) ;  
+         $(".output").text($("input").val()) ; 
+         $("input").val($("a").attr("class")) ;  
+
+    })
+    $("a").attr("href","https/wwwotr");
+     $("div").attr("class","eng");
+     $(".examp").text( $("div").attr("class"));
+   
+
+
+
+
+
 
 
 
