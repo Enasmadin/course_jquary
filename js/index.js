@@ -121,35 +121,55 @@ $(document).ready(function() {
 
 // text // 
 
- var dis = $(".text").text();
+//  var dis = $(".text").text();
 
-console.log(dis);
+// console.log(dis);
 
-$("p").text(dis);
+// $("p").text(dis);
 
 // html // 
 
-  var dis = $(".html").html();
-    console.log(dis);
-    $("p").html(dis);
-    $("p").text(dis); 
+//   var dis = $(".html").html();
+//     console.log(dis);
+//     $("p").html(dis);
+//     $("p").text(dis); 
 
-    $("button").click(function () {
-        $("input").val($("div").text()) ;  
-         $(".output").text($("input").val()) ; 
-         $("input").val($("a").attr("class")) ;  
+//     $("button").click(function () {
+//         $("input").val($("div").text()) ;  
+//          $(".output").text($("input").val()) ; 
+//          $("input").val($("a").attr("class")) ;  
 
-    })
-    $("a").attr("href","https/wwwotr");
-     $("div").attr("class","eng");
-     $(".examp").text( $("div").attr("class"));
+//     })
+//     $("a").attr("href","https/wwwotr");
+//      $("div").attr("class","eng");
+//      $(".examp").text( $("div").attr("class"));
    
+/// append  // 
+$("div").append("<p>elbnaa almangee </p>");
+$("div").append("dddd")
+$("div").prepend("dddd")
+$("div").after("<div> ffff </div>");
+$("div").before("<div> ffff </div>");
 
-
-
-
-
-
+$("span").click(function () {
+    $("input").after(" </br> <input type ='file'/>");
+    
+})
+$("span.add").css({cursor:"pointer"})
+$("<p> enas madina </p> ").prependTo("div");
+$("<p> enas madina </p> ").appendTo("div");
+$("<p></p>",{
+    text:"eeenas madhh",
+    class:"enas"
+}).prependTo("div");
 
 
 })
+
+
+
+
+
+
+
+
