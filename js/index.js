@@ -145,24 +145,36 @@ $(document).ready(function() {
 //      $(".examp").text( $("div").attr("class"));
    
 /// append  // 
-$("div").append("<p>elbnaa almangee </p>");
-$("div").append("dddd")
-$("div").prepend("dddd")
-$("div").after("<div> ffff </div>");
-$("div").before("<div> ffff </div>");
+// $("div").append("<p>elbnaa almangee </p>");
+// $("div").append("dddd")
+// $("div").prepend("dddd")
+// $("div").after("<div> ffff </div>");
+// $("div").before("<div> ffff </div>");
 
-$("span").click(function () {
-    $("input").after(" </br> <input type ='file'/>");
+// $("span").click(function () {
+//     $("input").after(" </br> <input type ='file'/>");
     
-})
-$("span.add").css({cursor:"pointer"})
-$("<p> enas madina </p> ").prependTo("div");
-$("<p> enas madina </p> ").appendTo("div");
-$("<p></p>",{
-    text:"eeenas madhh",
-    class:"enas"
-}).prependTo("div");
+// })
+// $("span.add").css({cursor:"pointer"})
+// $("<p> enas madina </p> ").prependTo("div");
+// $("<p> enas madina </p> ").appendTo("div");
+// $("<p></p>",{
+//     text:"eeenas madhh",
+//     class:"enas"
+// }).prependTo("div");
 
+/// empty //
+$("button").click(function() {
+ 
+    // $("div").hide();
+    // $("div").remove(".specfic-class");
+    $("div").fadeOut(5000,function () {
+        // $("div").empty();
+        $("div").hide();
+    })
+    // FILTER 
+    $("P").remove(":contains('this') ");
+})
 
 })
 
