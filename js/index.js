@@ -164,17 +164,38 @@ $(document).ready(function() {
 // }).prependTo("div");
 
 /// empty //
-$("button").click(function() {
+// $("button").click(function() {
  
-    // $("div").hide();
-    // $("div").remove(".specfic-class");
-    $("div").fadeOut(5000,function () {
-        // $("div").empty();
-        $("div").hide();
-    })
-    // FILTER 
-    $("P").remove(":contains('this') ");
+//     // $("div").hide();
+//     // $("div").remove(".specfic-class");
+//     $("div").fadeOut(5000,function () {
+//         // $("div").empty();
+//         $("div").hide();
+//     })
+//     // FILTER 
+//     $("P").remove(":contains('this') ");
+// })
+
+//// get css and set css //// 
+$("button").click(function () {
+    //  get 
+//     var  color= $("div").css("color")
+//    $("input").val($("div").css("padding"));
+//    $("<span></span>",{
+//     text:color
+    
+//    }).prependTo("body");
+
+// set 
+
+ var color = $("input").val();
+// $("div").css("color",color);
+$("div").css({"background":"black","padding":"10px" ,"color":color})
+
+
+
 })
+
 
 })
 
