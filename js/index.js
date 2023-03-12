@@ -246,10 +246,25 @@ $(document).ready(function() {
     // console.log( $(this).outerHeight(true));
 // })
 
- $("span").parent().css("border","3px  solid red") ;
- $("span").parents().css("border","3px  solid red") ;
-$("span").parents(".parenttop").css("border","3px  solid red") ;
-$("span").parentsUntil("section").css("border","3px  solid red") ;
+// parent 
+
+//  $("span").parent().css("border","3px  solid red") ;
+//  $("span").parents().css("border","3px  solid red") ;
+// $("span").parents(".parenttop").css("border","3px  solid red") ;
+// $("span").parentsUntil("section").css("border","3px  solid red") ;
+
+// children
+ // children choose  just dirctly   
+$("section").children("").css("border","3px  solid red");
+$("section").children(".parenttop").css("border","3px  solid red");
+ $("section").children("p:contains('love')").css("border","3px  solid red");
+ $("section").children("p").css("border","3px  solid red");
+
+//  find 
+
+// choose  any not just directly and object too  
+ $("section").find("p:contains('love')").css("border","3px  solid red");
+
 
 
 

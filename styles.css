@@ -118,3 +118,7 @@
     margin: 20px;
     border: 3px  solid red;
  }
+
+ span{
+    display: block;
+ }
