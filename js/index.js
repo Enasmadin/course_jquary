@@ -198,54 +198,58 @@ $(document).ready(function() {
 
 // width // 
 
-var dw = $(document).width();
-if(dw > 1000)
-{
-    $("body").append("<span> congratulation you in abig screen </span> ")
-}else
-{
-    $("body").append("<span> congratulation you in small screen </span>")
-}
+// var dw = $(document).width();
+// if(dw > 1000)
+// {
+//     $("body").append("<span> congratulation you in abig screen </span> ")
+// }else
+// {
+//     $("body").append("<span> congratulation you in small screen </span>")
+// }
 
 // example 
 
-$(".specfic-width").click(function () {
-    // $(this).width(500);
-    $(this).width("+=" + 50) // increse 50 each enter  it is important 
-    $(this).text(" your div is "+ $(this).width() + "px")
-})
+// $(".specfic-width").click(function () {
+//     // $(this).width(500);
+//     $(this).width("+=" + 50) // increse 50 each enter  it is important 
+//     $(this).text(" your div is "+ $(this).width() + "px")
+// })
 
-$(".left").click(function () {
-    $(this).width("+=" +50) ;
-    $(".right").width("-=" + 50);
-})
-$(".right").click(function () {
-    $(this).width("+=" +50) ;
-    $(".left").width("-=" + 50);
-})
-$(".contents").click(function () {
-    $(this).width("+=" +50) ;
-    if( $(this).width() == 700)
-    {
-        $(this).css(
-            {
-            width:'700px',
-            maxWidth:'700px'
-           }
-        )
-        console.log("this is width " + $(this).width() + 'px')
-    }
+// $(".left").click(function () {
+//     $(this).width("+=" +50) ;
+//     $(".right").width("-=" + 50);
+// })
+// $(".right").click(function () {
+//     $(this).width("+=" +50) ;
+//     $(".left").width("-=" + 50);
+// })
+// $(".contents").click(function () {
+//     $(this).width("+=" +50) ;
+//     if( $(this).width() == 700)
+//     {
+//         $(this).css(
+//             {
+//             width:'700px',
+//             maxWidth:'700px'
+//            }
+//         )
+//         console.log("this is width " + $(this).width() + 'px')
+//     }
    
-    console.log( $(this).width());
-    console.log( $(this).innerWidth());
-    console.log( $(this).outerWidth(true));
+    // console.log( $(this).width());
+    // console.log( $(this).innerWidth());
+    // console.log( $(this).outerWidth(true));
 
     // height // 
-    console.log( $(this).height());
-    console.log( $(this).innerHeight());
-    console.log( $(this).outerHeight(true));
-})
+    // console.log( $(this).height());
+    // console.log( $(this).innerHeight());
+    // console.log( $(this).outerHeight(true));
+// })
 
+ $("span").parent().css("border","3px  solid red") ;
+ $("span").parents().css("border","3px  solid red") ;
+$("span").parents(".parenttop").css("border","3px  solid red") ;
+$("span").parentsUntil("section").css("border","3px  solid red") ;
 
 
 
