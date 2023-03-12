@@ -177,7 +177,7 @@ $(document).ready(function() {
 // })
 
 //// get css and set css //// 
-$("button").click(function () {
+// $("button").click(function () {
     //  get 
 //     var  color= $("div").css("color")
 //    $("input").val($("div").css("padding"));
@@ -188,13 +188,67 @@ $("button").click(function () {
 
 // set 
 
- var color = $("input").val();
-// $("div").css("color",color);
-$("div").css({"background":"black","padding":"10px" ,"color":color})
+//  var color = $("input").val();
+// // $("div").css("color",color);
+// $("div").css({"background":"black","padding":"10px" ,"color":color})
 
 
 
+// })
+
+// width // 
+
+var dw = $(document).width();
+if(dw > 1000)
+{
+    $("body").append("<span> congratulation you in abig screen </span> ")
+}else
+{
+    $("body").append("<span> congratulation you in small screen </span>")
+}
+
+// example 
+
+$(".specfic-width").click(function () {
+    // $(this).width(500);
+    $(this).width("+=" + 50) // increse 50 each enter  it is important 
+    $(this).text(" your div is "+ $(this).width() + "px")
 })
+
+$(".left").click(function () {
+    $(this).width("+=" +50) ;
+    $(".right").width("-=" + 50);
+})
+$(".right").click(function () {
+    $(this).width("+=" +50) ;
+    $(".left").width("-=" + 50);
+})
+$(".contents").click(function () {
+    $(this).width("+=" +50) ;
+    if( $(this).width() == 700)
+    {
+        $(this).css(
+            {
+            width:'700px',
+            maxWidth:'700px'
+           }
+        )
+        console.log("this is width " + $(this).width() + 'px')
+    }
+   
+    console.log( $(this).width());
+    console.log( $(this).innerWidth());
+    console.log( $(this).outerWidth(true));
+
+    // height // 
+    console.log( $(this).height());
+    console.log( $(this).innerHeight());
+    console.log( $(this).outerHeight(true));
+})
+
+
+
+
 
 
 })
