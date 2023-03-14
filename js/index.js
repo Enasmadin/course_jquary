@@ -273,27 +273,41 @@ $(document).ready(function() {
 
 ///  next and  prev 
 
-$("div,p,aside,span").click(function () {
+// $("div,p,aside,span").click(function () {
     // next 
-    $(this).next(".next").fadeOut();
-    $(this).next("").fadeOut();
-    $(this).nextAll("").fadeOut();
-    $(this).nextAll(".next").fadeOut();
-    accordino 
-    $(this).next().slideToggle();
-    $(this).nextUntil(".next").fadeOut();
-    $(this).nextUntil("").fadeOut();
-    // prev 
-    $(this).prev().fadeOut();
-    $(this).prev(".next").fadeOut();
-    $(this).prevAll("").fadeOut();
-      $(this).prevAll(".prevent").fadeOut();
-      $(this).prevUntil().fadeOut();
-     $(this).prevUntil(".prevent").fadeOut();
-
-
- 
-})
+    // $(this).next(".next").fadeOut();
+    // $(this).next("").fadeOut();
+    // $(this).nextAll("").fadeOut();
+    // $(this).nextAll(".next").fadeOut();
+    // accordino 
+    // $(this).next().slideToggle();
+    // $(this).nextUntil(".next").fadeOut();
+    // $(this).nextUntil("").fadeOut();
+    // // prev 
+    // $(this).prev().fadeOut();
+    // $(this).prev(".next").fadeOut();
+    // $(this).prevAll("").fadeOut();
+    //   $(this).prevAll(".prevent").fadeOut();
+    //   $(this).prevUntil().fadeOut();
+    //  $(this).prevUntil(".prevent").fadeOut();
+    
+// })
+ // first , last , equal  
+//   $("div").first().next().css("color","red");
+//   $("div").last().prev().css("color","red");
+// //   $("div").eq(3).css("color", "white");
+//   $("div").filter(":contains('jquary')").css("color","red");
+//   $("div").filter(".jquary").css("color","red");
+//   $("div").filter(function (osama) {
+//     return osama === 2
+//   }).css("color","red");
+//  $("div").not(":contains('jquary')").css("color","red");
+//   $("div").not(".jquary").css("color","red");
+//  $("div").not(function (osama) {
+//    return osama === 2
+// }).css("color","red");
+// $("div").not("").css("color","red"); 
+// $("div").filter("").css("color","red"); 
 
 
 
