@@ -292,22 +292,22 @@ $(document).ready(function() {
     //  $(this).prevUntil(".prevent").fadeOut();
     
 // })
- // first , last , equal  
-//   $("div").first().next().css("color","red");
-//   $("div").last().prev().css("color","red");
-// //   $("div").eq(3).css("color", "white");
-//   $("div").filter(":contains('jquary')").css("color","red");
-//   $("div").filter(".jquary").css("color","red");
-//   $("div").filter(function (osama) {
-//     return osama === 2
-//   }).css("color","red");
-//  $("div").not(":contains('jquary')").css("color","red");
-//   $("div").not(".jquary").css("color","red");
-//  $("div").not(function (osama) {
-//    return osama === 2
-// }).css("color","red");
-// $("div").not("").css("color","red"); 
-// $("div").filter("").css("color","red"); 
+ first , last , equal  
+  $("div").first().next().css("color","red");
+  $("div").last().prev().css("color","red");
+//   $("div").eq(3).css("color", "white");
+  $("div").filter(":contains('jquary')").css("color","red");
+  $("div").filter(".jquary").css("color","red");
+  $("div").filter(function (osama) {
+    return osama === 2
+  }).css("color","red");
+ $("div").not(":contains('jquary')").css("color","red");
+  $("div").not(".jquary").css("color","red");
+ $("div").not(function (osama) {
+   return osama === 2
+}).css("color","red");
+$("div").not("").css("color","red"); 
+$("div").filter("").css("color","red"); 
 
 
 
