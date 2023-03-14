@@ -275,24 +275,24 @@ $(document).ready(function() {
 
 $("div,p,aside,span").click(function () {
     // next 
-    // $(this).next(".next").fadeOut();
-    // $(this).next("").fadeOut();
-    // $(this).nextAll("").fadeOut();
-    // $(this).nextAll(".next").fadeOut();
-    // accordino 
-    // $(this).next().slideToggle();
-    // $(this).nextUntil(".next").fadeOut();
-    // $(this).nextUntil("").fadeOut();
+    $(this).next(".next").fadeOut();
+    $(this).next("").fadeOut();
+    $(this).nextAll("").fadeOut();
+    $(this).nextAll(".next").fadeOut();
+    accordino 
+    $(this).next().slideToggle();
+    $(this).nextUntil(".next").fadeOut();
+    $(this).nextUntil("").fadeOut();
     // prev 
-    // $(this).prev().fadeOut();
-    // $(this).prev(".next").fadeOut();
-    // $(this).prevAll("").fadeOut();
-    //   $(this).prevAll(".prevent").fadeOut();
-    //   $(this).prevUntil().fadeOut();
+    $(this).prev().fadeOut();
+    $(this).prev(".next").fadeOut();
+    $(this).prevAll("").fadeOut();
+      $(this).prevAll(".prevent").fadeOut();
+      $(this).prevUntil().fadeOut();
      $(this).prevUntil(".prevent").fadeOut();
 
 
-
+ 
 })
 
 
