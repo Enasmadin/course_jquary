@@ -314,6 +314,26 @@ $(document).ready(function() {
 //  $("div:first").css("color","red");
 //  $("div:odd").css("color","red");
 
+///  first last // 
+//  $("p:first").css("border","5px solid red") ;
+//  $("p:last").css("border","5px solid red");
+
+// first 
+// $("p:first-child").css("border","5px solid red");
+// $("p:last-child").css("border","5px solid red");
+// first-type last-type 
+// $("p:first-of-type").css("border","5px solid red");
+// $("p:last-of-type").css("border","5px solid red");
+// nth-child 
+// $("p:nth-child(6)").css("border","5px solid red");
+// $("p:nth-child(3)").css("border","5px solid red");
+// $("p:nth-child(3)").css("border","5px solid red");
+//  $("p:nth-last-child(4)").css("border","5px solid red");
+
+// nth-type 
+// $("p:nth-of-type(2)").css("border","5px solid red");
+// $("p:nth-last-of-type(2)").css("border","5px solid red");
+
 
 
 

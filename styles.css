@@ -119,15 +119,15 @@
     border: 3px  solid red;
  }
 
-  span{
+  /* span{
     display: block;
- } 
+ }  */
 
- div,p,aside ,span{
+ /* div,p,aside ,span{
     width: 500px;
     height: 50px;
     background-color: aqua;
     padding: 20px;
     margin: 20px;
     
- }
+ } */
