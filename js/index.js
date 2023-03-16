@@ -334,7 +334,15 @@ $(document).ready(function() {
 // $("p:nth-of-type(2)").css("border","5px solid red");
 // $("p:nth-last-of-type(2)").css("border","5px solid red");
 
-
+// 
+// $("p:only-child").css("border","5px solid red");
+// $("p:only-of-type").css("border","5px solid red");
+// $("div > p").css("border","5px solid red");
+// $("div + p").css("border","5px solid red");
+// $("div p").css("border","5px solid red");
+// $(" div:eq(3)").css("border","5px solid red");
+// $("div:not(:contains('5'))").css("border","5px solid red");
+$(" div:gt(3)").css("border","5px solid red");
 
 
 
