@@ -342,7 +342,25 @@ $(document).ready(function() {
 // $("div p").css("border","5px solid red");
 // $(" div:eq(3)").css("border","5px solid red");
 // $("div:not(:contains('5'))").css("border","5px solid red");
-$(" div:gt(3)").css("border","5px solid red");
+// $(" div:gt(3)").css("border","5px solid red");
+// $(":header").css("border" ,"5px solid red");
+// $(".amira").animate({width:'600px'},8000 )
+// $(":animated").css("border",)"5px solid black";
+// $("input").focus();
+// $(":focus").css("border","5px solid black"); 
+// $("div:contains('enas')").css("color","red");
+// $("div:has('p')").css("color" ,"blue");
+// $("div:empty").text("enas madina").css("color" ,"blue");
+// $("div:parent").css("color" ,"blue");
+// $(":hidden").css("display", "block") ;
+
+// $("div:visible").css("border","5px solid black");
+// $(":root").css("border","5px solid black");
+$("div:lang('ar')").css("border","5px solid black");
+
+
+
+
 
 
 

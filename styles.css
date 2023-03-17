@@ -12,7 +12,7 @@
     display: none;
 } */
 
-.first{
+/* .first{
     width: 400px;
     margin: 20px auto;
     background-color: rebeccapurple;
@@ -25,8 +25,8 @@
     background-color: red;
     padding: 50px;  
     /* display: none; */
-}
-.animate{
+
+/* .animate{
     width:300px;
     height: 400px;
     background-color: blue;
@@ -40,8 +40,8 @@
 
 
     
-}
-.animate-1{
+} */
+/* .animate-1{
     width:300px;
     height: 400px;
     background-color: yellow;
@@ -117,7 +117,7 @@
     padding: 20px;
     margin: 20px;
     border: 3px  solid red;
- }
+ } */ 
 
   /* span{
     display: block;
@@ -131,3 +131,26 @@
     margin: 20px;
     
  } */
+
+ /* .asss{
+    width:400px;
+    background-color: red;
+    height: 500px;
+ } */
+ /* .enas{
+    color: red;
+    /* width:400px;
+    background-color: red;
+    height: 500px; 
+ } 
+ .amira{
+    color: red;
+    width: 900px;
+    height: 200px;
+    background-color: red;
+    border: 5px solid black ; 
+ } 
+ */
+ .display{
+    display: none;
+ }
