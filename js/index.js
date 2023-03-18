@@ -354,11 +354,15 @@ $(document).ready(function() {
 // $("div:parent").css("color" ,"blue");
 // $(":hidden").css("display", "block") ;
 
-// $("div:visible").css("border","5px solid black");
-// $(":root").css("border","5px solid black");
+$("div:visible").css("border","5px solid black");
+$(":root").css("border","5px solid black");
 $("div:lang('ar')").css("border","5px solid black");
-
-
+$(":input").css("border" ,"5px solid red");
+$(":file").css("border" ,"5px solid red");
+$(":disabled").css("border" ,"5px solid red");
+$(":enabled").css("color","red")
+$(":checked").css("border","5px solid red")
+$(":selected").css("color","red") ;
 
 
 
