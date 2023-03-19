@@ -401,17 +401,19 @@ $(document).ready(function() {
 //     $(this).text("hello " + myname ).css("color",mycolor).width(mywidth).height(myheight).css("background-color",mybackcolor);
 //     // $(this).css("background-color",mybackcolor)
 // })
-// $("button").click(function () {
-//     $(".normal").trigger("mycustomevent",[ "enas","red","300px","600px","blue"])
-// })
-// $("span").live("click",function () {
-//     $("<input type='file'> <span> + </span>").insertAfter($(this));
-// })
-// })
 
-// $("span").click(function () {
-//     $("<input type='file'> <span> + </span>").insertAfter($(this));
-// })
+// live and click 
+$("button").click(function () {
+    $(".normal").trigger("mycustomevent",[ "enas","red","300px","600px","blue"])
+})
+$("span").live("click",function () {
+    $("<input type='file'> <span> + </span>").insertAfter($(this));
+})
+})
+
+$("span").click(function () {
+    $("<input type='file'> <span> + </span>").insertAfter($(this));
+})
 
 
 
