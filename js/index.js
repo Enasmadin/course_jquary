@@ -354,22 +354,56 @@ $(document).ready(function() {
 // $("div:parent").css("color" ,"blue");
 // $(":hidden").css("display", "block") ;
 
-$("div:visible").css("border","5px solid black");
-$(":root").css("border","5px solid black");
-$("div:lang('ar')").css("border","5px solid black");
-$(":input").css("border" ,"5px solid red");
-$(":file").css("border" ,"5px solid red");
-$(":disabled").css("border" ,"5px solid red");
-$(":enabled").css("color","red")
-$(":checked").css("border","5px solid red")
-$(":selected").css("color","red") ;
+// $("div:visible").css("border","5px solid black");
+// $(":root").css("border","5px solid black");
+// $("div:lang('ar')").css("border","5px solid black");
+// $(":input").css("border" ,"5px solid red");
+// $(":file").css("border" ,"5px solid red");
+// $(":disabled").css("border" ,"5px solid red");
+// $(":enabled").css("color","red")
+// $(":checked").css("border","5px solid red")
+// $(":selected").css("color","red") ;
+// click 
+// $(".normal").click(function () {
+//     $(this).hide();
+// })
+// mouse enter and mouse leave 
+$(".normal").mouseenter(function () {
+    $(this).css("color","blue");
+    $(this).toggleClass("color")
+})
+$(".normal").mouseleave(function () {
+    $(this).css("color","red");
+    $(this).toggleClass("color")
+})
+// bind  function 
+
+$(".normal").bind("mouseenter","mouseleave",function () {
+    $(this).toggleClass("color");
+    
+})
+// map function 
+
+$(".normal").bind({
+    click:function () {
+        $(this).text("you have clicked in it ")
+    },
+    dblclick:function (params) {
+        $(this).text("you have  double clicked in it ")
+    }
+
+})
 
 
+// custom event
 
-
-
-
-
+$(".normal").bind("mycustomevent",function (event,myname,mycolor,mywidth,myheight,mybackcolor) {
+    $(this).text("hello " + myname ).css("color",mycolor).width(mywidth).height(myheight).css("background-color",mybackcolor);
+    // $(this).css("background-color",mybackcolor)
+})
+$("button").click(function () {
+    $(".normal").trigger("mycustomevent",[ "enas","red","300px","600px","blue"])
+})
 })
 
 
