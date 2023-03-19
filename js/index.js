@@ -368,48 +368,56 @@ $(document).ready(function() {
 //     $(this).hide();
 // })
 // mouse enter and mouse leave 
-$(".normal").mouseenter(function () {
-    $(this).css("color","blue");
-    $(this).toggleClass("color")
-})
-$(".normal").mouseleave(function () {
-    $(this).css("color","red");
-    $(this).toggleClass("color")
-})
+// $(".normal").mouseenter(function () {
+//     $(this).css("color","blue");
+//     $(this).toggleClass("color")
+// })
+// $(".normal").mouseleave(function () {
+//     $(this).css("color","red");
+//     $(this).toggleClass("color")
+// })
 // bind  function 
 
-$(".normal").bind("mouseenter","mouseleave",function () {
-    $(this).toggleClass("color");
+// $(".normal").bind("mouseenter","mouseleave",function () {
+//     $(this).toggleClass("color");
     
-})
+// })
 // map function 
 
-$(".normal").bind({
-    click:function () {
-        $(this).text("you have clicked in it ")
-    },
-    dblclick:function (params) {
-        $(this).text("you have  double clicked in it ")
-    }
+// $(".normal").bind({
+//     click:function () {
+//         $(this).text("you have clicked in it ")
+//     },
+//     dblclick:function (params) {
+//         $(this).text("you have  double clicked in it ")
+//     }
 
-})
+// })
 
 
 // custom event
 
-$(".normal").bind("mycustomevent",function (event,myname,mycolor,mywidth,myheight,mybackcolor) {
-    $(this).text("hello " + myname ).css("color",mycolor).width(mywidth).height(myheight).css("background-color",mybackcolor);
-    // $(this).css("background-color",mybackcolor)
+// $(".normal").bind("mycustomevent",function (event,myname,mycolor,mywidth,myheight,mybackcolor) {
+//     $(this).text("hello " + myname ).css("color",mycolor).width(mywidth).height(myheight).css("background-color",mybackcolor);
+//     // $(this).css("background-color",mybackcolor)
+// })
+// $("button").click(function () {
+//     $(".normal").trigger("mycustomevent",[ "enas","red","300px","600px","blue"])
+// })
+// $("span").live("click",function () {
+//     $("<input type='file'> <span> + </span>").insertAfter($(this));
+// })
+// })
+
+// $("span").click(function () {
+//     $("<input type='file'> <span> + </span>").insertAfter($(this));
+// })
+
+
+
+
+
+
+
 })
-$("button").click(function () {
-    $(".normal").trigger("mycustomevent",[ "enas","red","300px","600px","blue"])
-})
-})
-
-
-
-
-
-
-
 
