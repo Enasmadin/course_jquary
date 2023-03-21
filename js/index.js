@@ -418,9 +418,43 @@ $(document).ready(function() {
 // delegate 
 
 
-$("body").delegate("span","click",function () {
-    $("<input type='file'> <span> + </span>").insertAfter($(this));
+// $("body").delegate("span","click",function () {
+//     $("<input type='file'> <span> + </span>").insertAfter($(this));
+// })
+
+
+// event on 
+
+$(".normal").on("click",function () {
+    $(this).hide();
 })
+
+
+//  multi event 
+$(".normal").on("mouseenter mouseleave",function () {
+    // $(this).hide();
+    $(this).css("color","red");
+})
+
+// custom event 
+$(".normal").on("mycustom",function (event) {
+    $(this).hide();
+})
+$("button").click(function () {
+    $(".normal").trigger("mycustom");
+})
+
+// map event by on 
+$(".normal").on({
+    click:function () {
+          
+        $(this).css("color","red");  
+    },
+    dblclick:function () {
+        $(this).hide();
+    }
+})
+
 
 
 
