@@ -483,6 +483,35 @@ $(document).ready(function() {
 // $("select").on("change",function () {
 //     $("div").text($("select").val());
 // })
+// $("input").on("blur",function () {
+//      const value = $(this).val();
+//      if(value === "enas")
+//      {
+//         $("div").fadeIn("3000",function () {
+//             $(this).fadeOut(2000);
+//         }).text("this is your great ")
+//      }
+//      else{
+//         $("div").fadeIn("3000",function () {
+//             $(this).fadeOut(2000);
+//         }).text("this is no requaried ")
+//      }
+// })
+// focus and blur 
+// $("input").on("focus",function () {
+//     const value = $(this).val();
+//     if(value === "enas")
+//     {
+//        $("div").fadeIn("3000",function () {
+//            $(this).fadeOut(2000);
+//        }).text("this is your great ")
+//     }
+//     else{
+//        $("div").fadeIn("3000",function () {
+//            $(this).fadeOut(2000);
+//        }).text("this is no requaried ")
+//     }
+// })
 
 
 
