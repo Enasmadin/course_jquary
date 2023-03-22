@@ -425,34 +425,55 @@ $(document).ready(function() {
 
 // event on 
 
-$(".normal").on("click",function () {
-    $(this).hide();
-})
+// $(".normal").on("click",function () {
+//     $(this).hide();
+// })
 
 
-//  multi event 
-$(".normal").on("mouseenter mouseleave",function () {
-    // $(this).hide();
-    $(this).css("color","red");
-})
+ // multi event 
+// $(".normal").on("mouseenter mouseleave",function () {
+//     // $(this).hide();
+//     $(this).css("color","red");
+// })
 
 // custom event 
-$(".normal").on("mycustom",function (event) {
-    $(this).hide();
-})
-$("button").click(function () {
-    $(".normal").trigger("mycustom");
-})
+// $(".normal").on("mycustom",function (event) {
+//     $(this).hide();
+// })
+// $("button").click(function () {
+//     $(".normal").trigger("mycustom");
+// })
 
 // map event by on 
-$(".normal").on({
-    click:function () {
+// $(".normal").on({
+//     click:function () {
           
-        $(this).css("color","red");  
-    },
-    dblclick:function () {
-        $(this).hide();
-    }
+//         $(this).css("color","red");  
+//     },
+//     dblclick:function () {
+//         $(this).hide();
+//     }
+// })
+
+// PREVENTDEFAULT
+
+// $("a").on("click",function (event) {
+//    event.preventDefault();
+//    if(event.isDefaultPrevented()){
+//     $("div").text(" this is  no a work")
+//    }
+// })
+
+
+//  keyup and keydown 
+$("input").on("keydown",function () {
+    $("div").text($("input").val());
+})
+$("input").on("keyup",function () {
+    $("div").text($("input").val());
+})
+$("input").on("keypress",function () {
+    $("div").text($("input").val());
 })
 
 
