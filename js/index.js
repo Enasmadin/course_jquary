@@ -466,15 +466,23 @@ $(document).ready(function() {
 
 
 //  keyup and keydown 
-$("input").on("keydown",function () {
-    $("div").text($("input").val());
-})
-$("input").on("keyup",function () {
-    $("div").text($("input").val());
-})
-$("input").on("keypress",function () {
-    $("div").text($("input").val());
-})
+// $("input").on("keydown",function () {
+//     $("div").text($("input").val());
+// })
+// $("input").on("keyup",function () {
+//     $("div").text($("input").val());
+// })
+// $("input").on("keypress",function () {
+//     $("div").text($("input").val());
+// })
+
+/// change 
+// $("input").on("change",function () {
+//     $("div").text($("input").val());
+// })
+// $("select").on("change",function () {
+//     $("div").text($("select").val());
+// })
 
 
 
