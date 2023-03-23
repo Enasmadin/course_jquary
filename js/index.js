@@ -524,7 +524,7 @@ $("div").on("click dblclick",function () {
         fontSize:"+=3px" 
     })
 })
-
+  
 
 
 
