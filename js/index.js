@@ -511,7 +511,19 @@ $(document).ready(function() {
 //            $(this).fadeOut(2000);
 //        }).text("this is no requaried ")
 //     }
-// })
+// }
+// event one 
+
+$("div").one("click dblclick",function () {
+    $(this).animate({
+        fontSize:"+=3px" 
+    })
+})
+$("div").on("click dblclick",function () {
+    $(this).animate({
+        fontSize:"+=3px" 
+    })
+})
 
 
 
