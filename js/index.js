@@ -514,17 +514,39 @@ $(document).ready(function() {
 // }
 // event one 
 
-$("div").one("click dblclick",function () {
-    $(this).animate({
-        fontSize:"+=3px" 
-    })
-})
-$("div").on("click dblclick",function () {
-    $(this).animate({
-        fontSize:"+=3px" 
-    })
-})
+// $("div").one("click dblclick",function () {
+//     $(this).animate({
+//         fontSize:"+=3px" 
+//     })
+// })
+// $("div").on("click dblclick",function () {
+//     $(this).animate({
+//         fontSize:"+=3px" 
+//     })
+// })
   
+
+// event select 
+
+// $("p").on("click",function () {
+//     $(this).select();
+// })
+$("p").select(function () {
+    // $(this).FadeOut();
+    console.log("enas madina ")
+});
+
+$("textarea").select(function () {
+    console.log("enas madina ")
+});
+$("input").select(function(){
+    $("input").after(" Text marked!");
+  });
+  $("button").click(function(){
+    $("input").select();
+  });  
+
+
 
 
 
