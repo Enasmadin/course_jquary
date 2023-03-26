@@ -536,15 +536,28 @@ $("p").select(function () {
     console.log("enas madina ")
 });
 
-$("textarea").select(function () {
-    console.log("enas madina ")
-});
-$("input").select(function(){
-    $("input").after(" Text marked!");
-  });
-  $("button").click(function(){
-    $("input").select();
-  });  
+// $("textarea").select(function () {
+//     console.log("enas madina ")
+// });
+// $("input").select(function(){
+//     $("input").after(" Text marked!");
+//   });
+//   $("button").click(function(){
+//     $("input").select();
+//   });  
+$("section").height($(window).height());
+$(window).on("resize",function () {
+   $("section").height($(window).height());
+    var widths = $(window).width(),
+       heigh= $(window).height();
+       console.log(widths,heigh)
+       if(widths < 750){
+        $("div").addClass("hidden")
+       }
+       else{
+        $("div").removeClass("hidden")
+       }
+})
 
 
 
