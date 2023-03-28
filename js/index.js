@@ -544,7 +544,9 @@ $("p").select(function () {
 //   });
 //   $("button").click(function(){
 //     $("input").select();
-//   });  
+//   }); 
+
+// resize 
 $("section").height($(window).height());
 $(window).on("resize",function () {
    $("section").height($(window).height());
