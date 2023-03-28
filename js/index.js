@@ -563,16 +563,30 @@ $("p").select(function () {
 
 // scroll 
 
-$(window).on("scroll",function () {
-   var sc = $(window).scrollTop() ;
-   console.log(sc);
-   if(sc> 1200){
-    $("div").fadeOut();
-   }
-   else{
-    $("div").fadeIn();
-   }
+// $(window).on("scroll",function () {
+//    var sc = $(window).scrollTop() ;
+//    console.log(sc);
+//    if(sc> 1200){
+//     $("div").fadeOut();
+//    }
+//    else{
+//     $("div").fadeIn();
+//    }
+// })
+// page x and page y 
+
+$(window).mousemove(function (e) {
+  $("span").text("x-axias:" + e.pageX +" y-axias:" + e.pageY  )  ;
+
 })
+$("html").on("click",function (e) {
+    $(".Sircle").show().offset({
+        left:e.pageX,
+        top:e.pageY
+    })
+})
+
+
 
 
 
