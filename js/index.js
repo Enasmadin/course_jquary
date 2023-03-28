@@ -547,18 +547,31 @@ $("p").select(function () {
 //   }); 
 
 // resize 
-$("section").height($(window).height());
-$(window).on("resize",function () {
-   $("section").height($(window).height());
-    var widths = $(window).width(),
-       heigh= $(window).height();
-       console.log(widths,heigh)
-       if(widths < 750){
-        $("div").addClass("hidden")
-       }
-       else{
-        $("div").removeClass("hidden")
-       }
+// $("section").height($(window).height());
+// $(window).on("resize",function () {
+//    $("section").height($(window).height());
+//     var widths = $(window).width(),
+//        heigh= $(window).height();
+//        console.log(widths,heigh)
+//        if(widths < 750){
+//         $("div").addClass("hidden")
+//        }
+//        else{
+//         $("div").removeClass("hidden")
+//        }
+// })
+
+// scroll 
+
+$(window).on("scroll",function () {
+   var sc = $(window).scrollTop() ;
+   console.log(sc);
+   if(sc> 1200){
+    $("div").fadeOut();
+   }
+   else{
+    $("div").fadeIn();
+   }
 })
 
 
