@@ -575,15 +575,36 @@ $("p").select(function () {
 // })
 // page x and page y 
 
-$(window).mousemove(function (e) {
-  $("span").text("x-axias:" + e.pageX +" y-axias:" + e.pageY  )  ;
+// $(window).mousemove(function (e) {
+//   $("span").text("x-axias:" + e.pageX +" y-axias:" + e.pageY  )  ;
 
+// })
+// $("html").on("click",function (e) {
+//     $(".Sircle").show().offset({
+//         left:e.pageX,
+//         top:e.pageY
+//     })
+// })
+
+// submit  && delay 
+$("form").submit(function (event) {
+  if($("input:first").val()=== "conform"){
+    // $("span").text("word this is right").show();
+    // $("span").text("word this is right").fadeIn(5000).delay(5000).fadeOut(6000);
+    return ;
+
+  } 
+  event.preventDefault() ;
+  $("span").text("word this is wrong").fadeIn(5000). delay(5000).fadeOut(6000);
 })
-$("html").on("click",function (e) {
-    $(".Sircle").show().offset({
-        left:e.pageX,
-        top:e.pageY
-    })
+
+// clone 
+$("button").on ("click",function () {
+//   $("div").clone(true).appendTo("body");
+  $("div").clone(false).appendTo("body");    
+})
+$("div").on("click",function () {
+  $(this).css("color","red") 
 })
 
 
