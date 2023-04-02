@@ -608,6 +608,7 @@ $("p").select(function () {
 // })
 
 
+// detach // 
  var el = $("div")
 
 $("#remove").on("click",function () {
@@ -620,6 +621,16 @@ $("#add").on("click",function () {
 el.on("click",function () {
   $(this).css("color","red");
 })
+
+// hasclass 
+
+$("li").each(function () {
+  if($(this).hasClass('active')){
+    $(this).parent().css("color","red");
+  }
+  
+})
+
 
 
 
