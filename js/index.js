@@ -587,28 +587,39 @@ $("p").select(function () {
 // })
 
 // submit  && delay 
-$("form").submit(function (event) {
-  if($("input:first").val()=== "conform"){
-    // $("span").text("word this is right").show();
-    // $("span").text("word this is right").fadeIn(5000).delay(5000).fadeOut(6000);
-    return ;
+// $("form").submit(function (event) {
+//   if($("input:first").val()=== "conform"){
+//     // $("span").text("word this is right").show();
+//     // $("span").text("word this is right").fadeIn(5000).delay(5000).fadeOut(6000);
+//     return ;
 
-  } 
-  event.preventDefault() ;
-  $("span").text("word this is wrong").fadeIn(5000). delay(5000).fadeOut(6000);
-})
+//   } 
+//   event.preventDefault() ;
+//   $("span").text("word this is wrong").fadeIn(5000). delay(5000).fadeOut(6000);
+// })
 
 // clone 
-$("button").on ("click",function () {
-//   $("div").clone(true).appendTo("body");
-  $("div").clone(false).appendTo("body");    
+// $("button").on ("click",function () {
+// //   $("div").clone(true).appendTo("body");
+//   $("div").clone(false).appendTo("body");    
+// })
+// $("div").on("click",function () {
+//   $(this).css("color","red") 
+// })
+
+
+ var el = $("div")
+
+$("#remove").on("click",function () {
+  // $("div").remove();
+  $("div").detach();
 })
-$("div").on("click",function () {
-  $(this).css("color","red") 
+$("#add").on("click",function () {
+  $("body").append(el);
 })
-
-
-
+el.on("click",function () {
+  $(this).css("color","red");
+})
 
 
 
