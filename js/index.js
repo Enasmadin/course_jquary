@@ -653,10 +653,38 @@ $("li").each(function () {
 
   /// offset 
 
-  var offset = $(".child").offset();
-  var position = $(".child").position();
-  console.log(offset);
-  console.log(position);
+  // var offset = $(".child").offset();
+  // var position = $(".child").position();
+  // console.log(offset);
+  // console.log(position);
+
+  // atrr and prop 
+  // $("button").on("click",function (e) {
+  //   e.preventDefault();
+  //   //  $("input").prop("disabled",false)
+  //   $("input").prop({
+  //     "name":"myfrined",
+  //      "disabled":false,
+  //      "id" :"#tyr"
+
+  //   })
+  //   //  const proprity = $("input").prop("disabled");
+  //    const proprity = $("input").prop("name");
+  //   //  const attr = $("input").attr("disabled");
+  //    const attr = $("input").attr("name");
+  //    console.log(proprity);
+  //    console.log(attr)
+  // })
+
+  // replacewith 
+  $("div").on("click",function () {
+    $("div").replaceWith("<input type='text' value='" + $('div').text() +"' >")
+    $("button").fadeIn();
+  })
+  $("button").on("click",function () {
+    $("input").replaceWith("<div>"+  $('input').val()  + "</div>")
+  })
+
 
 
 

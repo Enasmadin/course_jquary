@@ -202,7 +202,7 @@
     height: 4000px;
 } */
 
-.parent{
+/* .parent{
     width:400px;
     height:900px;
     background-color: brown;
@@ -215,7 +215,11 @@
     background-color: aqua;
     left:100;
     top:400;
-}
-*{
+} */
+/* *{
     margin: 0;
+} */
+
+button{
+    display:none;
 }
