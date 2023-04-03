@@ -630,6 +630,33 @@ $("li").each(function () {
   }
   
 })
+// offset 
+
+  // $("div").offset({
+  //   left:20,
+  //   top:30,
+  // }) ;
+
+  //  console.log( $("div").offset().top);
+
+  // $(window).scroll(function () {
+  //   var scrolling = $(this).scrollTop();
+  //   var offstting = $("div").offset().top;
+
+
+  //   console.log("scrolling:",scrolling);
+  //   console.log("offseting:",offstting);
+  //   if(scrolling==offstting){
+  //     $("div").fadeOut();
+  //   }
+  // })
+
+  /// offset 
+
+  var offset = $(".child").offset();
+  var position = $(".child").position();
+  console.log(offset);
+  console.log(position);
 
 
 

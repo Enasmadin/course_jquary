@@ -189,3 +189,33 @@
 /* span{
     display: none;
 } */
+
+/* div{
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+     left:100;
+    top:105; 
+} */
+/* body{
+    height: 4000px;
+} */
+
+.parent{
+    width:400px;
+    height:900px;
+    background-color: brown;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.child{
+    position:absolute;
+    background-color: aqua;
+    left:100;
+    top:400;
+}
+*{
+    margin: 0;
+}
