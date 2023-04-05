@@ -688,19 +688,28 @@ $("li").each(function () {
 
   // offset and scrolltop 
 
-  $(window).scroll(function () {
-    var scroll =  $(window).scrollTop();
-    var offset = $(".test").offset().top;
-    console.log(scroll,offset)
-    if(scroll >=  offset){
-      $(".test").animate({
-        opacity:0
-      },5000);
-    }
+  // $(window).scroll(function () {
+  //   var scroll =  $(window).scrollTop();
+  //   var offset = $(".test").offset().top;
+  //   console.log(scroll,offset)
+  //   if(scroll >=  offset){
+  //     $(".test").animate({
+  //       opacity:0
+  //     },5000);
+  //   }
+  // })
+  // $(window).scrollTop(100);
+  // $("button").on("click",function () {
+  //   $(window).scrollTop(0);
+  // })
+
+  // wrap 
+
+  $(".add").on("click",function () {
+    $("span").wrap('<div> </div>');
   })
-  $(window).scrollTop(100);
-  $("button").on("click",function () {
-    $(window).scrollTop(0);
+  $(".remove").on("click",function () {
+    $("span").unwrap();
   })
 
 
