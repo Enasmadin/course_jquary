@@ -609,18 +609,18 @@ $("p").select(function () {
 
 
 // detach // 
- var el = $("div")
+//  var el = $("div")
 
-$("#remove").on("click",function () {
-  // $("div").remove();
-  $("div").detach();
-})
-$("#add").on("click",function () {
-  $("body").append(el);
-})
-el.on("click",function () {
-  $(this).css("color","red");
-})
+// $("#remove").on("click",function () {
+//   // $("div").remove();
+//   $("div").detach();
+// })
+// $("#add").on("click",function () {
+//   $("body").append(el);
+// })
+// el.on("click",function () {
+//   $(this).css("color","red");
+// })
 
 // hasclass 
 
@@ -677,12 +677,30 @@ $("li").each(function () {
   // })
 
   // replacewith 
-  $("div").on("click",function () {
-    $("div").replaceWith("<input type='text' value='" + $('div').text() +"' >")
-    $("button").fadeIn();
+  // $("div").on("click",function () {
+  //   $("div").replaceWith("<input type='text' value='" + $('div').text() +"' >")
+  //   $("button").fadeIn();
+  // })
+  // $("button").on("click",function () {
+  //   $("input").replaceWith("<div>"+  $('input').val()  + "</div>")
+  // })
+
+
+  // offset and scrolltop 
+
+  $(window).scroll(function () {
+    var scroll =  $(window).scrollTop();
+    var offset = $(".test").offset().top;
+    console.log(scroll,offset)
+    if(scroll >=  offset){
+      $(".test").animate({
+        opacity:0
+      },5000);
+    }
   })
+  $(window).scrollTop(100);
   $("button").on("click",function () {
-    $("input").replaceWith("<div>"+  $('input').val()  + "</div>")
+    $(window).scrollTop(0);
   })
 
 
