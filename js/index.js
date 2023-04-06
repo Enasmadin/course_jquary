@@ -713,11 +713,19 @@ $("li").each(function () {
   // })
   // each 
 
-  $("li").each(function () {
-    if($(this).hasClass("test")){
-      $(this).css("color","red")
-    }
-  })
+  // $("li").each(function () {
+  //   if($(this).hasClass("test")){
+  //     $(this).css("color","red")
+  //   }
+  // })
+
+  // in child in it 
+  $("p,div").has(".test","span").css("color","red");
+  // it is parent 
+  if($("div").hasClass("test")){
+    $("div").css("color","red")
+  }
+  
 
 
 
