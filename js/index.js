@@ -705,11 +705,18 @@ $("li").each(function () {
 
   // wrap 
 
-  $(".add").on("click",function () {
-    $("span").wrap('<div> </div>');
-  })
-  $(".remove").on("click",function () {
-    $("span").unwrap();
+  // $(".add").on("click",function () {
+  //   $("span").wrap('<div> </div>');
+  // })
+  // $(".remove").on("click",function () {
+  //   $("span").unwrap();
+  // })
+  // each 
+
+  $("li").each(function () {
+    if($(this).hasClass("test")){
+      $(this).css("color","red")
+    }
   })
 
 
