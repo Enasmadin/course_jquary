@@ -727,23 +727,24 @@ $("li").each(function () {
   // }
   
   //  is 
-
-  $("span").on("click",function () {
-   if($(this).parent().is("div")){
-    $("span").css("color","red")
-   }
-  if($(this).is("span")){
-    $("span").css("color","red"); 
-  }
-  if($(this).parent().is(":contains('javascript')")){
-    $("span").css("color","red"); 
-  }
-  if($(this).is(":first-child")){
-    alert("this is  first span ")
-  }
-  })
+ 
+  // $("span").on("click",function () {
+  //  if($(this).parent().is("div")){
+  //   $("span").css("color","red")
+  //  }
+  // if($(this).is("span")){
+  //   $("span").css("color","red"); 
+  // }
+  // if($(this).parent().is(":contains('javascript')")){
+  //   $("span").css("color","red"); 
+  // }
+  // if($(this).is(":first-child")){
+  //   alert("this is  first span ")
+  // }
+  // })
   
-
+// end 
+$("div").find("span").css("color","red").end().css("color","blue");
 
 
 
