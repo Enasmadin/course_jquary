@@ -720,11 +720,28 @@ $("li").each(function () {
   // })
 
   // in child in it 
-  $("p,div").has(".test","span").css("color","red");
+  // $("p,div").has(".test","span").css("color","red");
   // it is parent 
-  if($("div").hasClass("test")){
-    $("div").css("color","red")
+  // if($("div").hasClass("test")){
+  //   $("div").css("color","red")
+  // }
+  
+  //  is 
+
+  $("span").on("click",function () {
+   if($(this).parent().is("div")){
+    $("span").css("color","red")
+   }
+  if($(this).is("span")){
+    $("span").css("color","red"); 
   }
+  if($(this).parent().is(":contains('javascript')")){
+    $("span").css("color","red"); 
+  }
+  if($(this).is(":first-child")){
+    alert("this is  first span ")
+  }
+  })
   
 
 
